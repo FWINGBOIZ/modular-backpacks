@@ -6,7 +6,7 @@
 ### Requirements
 - Java 8 JDK
 - Java IDE (preferably VS Code)
-- [Forge 1.15.2 MDK](https://adfoc.us/serve/?id=27122885838970)
+- [Forge 1.18.2 MDK](https://adfoc.us/serve/?id=27122885838970)
 
 ### Installation
 These steps use VS Code as the IDE. Once you have the above requirements downloaded, follow the steps below.
