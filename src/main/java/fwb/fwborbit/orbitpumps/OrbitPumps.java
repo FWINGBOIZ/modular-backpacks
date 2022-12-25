@@ -1,4 +1,4 @@
-package com.example.orbitpumps;
+package fwb.fwborbit.orbitpumps;
 
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
