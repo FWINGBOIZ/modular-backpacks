@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "orbitpumps:block/simple_pump"
+    }
+  }
+}

@@ -13,6 +13,6 @@ public class OrbitItemModels extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-        withExistingParent(Registration.SIMPLE_PUMP.getId().getPath(), modLoc("block/simplepump_front"));
+        withExistingParent(Registration.SIMPLE_PUMP.getId().getPath(), modLoc("block/simple_pump"));
     }
 }

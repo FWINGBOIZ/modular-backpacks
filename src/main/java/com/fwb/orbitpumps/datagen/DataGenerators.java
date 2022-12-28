@@ -11,8 +11,8 @@ public class DataGenerators {
     @SubscribeEvent
     public static void gatherData(GatherDataEvent e) {
         DataGenerator gen = e.getGenerator();
-//        gen.addProvider(e.includeClient(), new OrbitBlockStates(gen, e.getExistingFileHelper()));
-//        gen.addProvider(e.includeClient(), new OrbitItemModels(gen, e.getExistingFileHelper()));
+        gen.addProvider(e.includeClient(), new OrbitBlockStates(gen, e.getExistingFileHelper()));
+        gen.addProvider(e.includeClient(), new OrbitItemModels(gen, e.getExistingFileHelper()));
         gen.addProvider(e.includeClient(), new OrbitLanguageProvider(gen, "en_us"));
     }
 }
