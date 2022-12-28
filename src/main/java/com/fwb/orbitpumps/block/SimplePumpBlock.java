@@ -1,6 +1,6 @@
-package com.example.orbitpumps.block;
+package com.fwb.orbitpumps.block;
 
-import com.example.orbitpumps.block.entity.SimplePumpTile;
+import com.fwb.orbitpumps.block.entity.SimplePumpTile;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
@@ -33,6 +33,7 @@ public class SimplePumpBlock extends Block implements EntityBlock {
 
     @Nullable
     @Override
+    // Links BlockEntity to Block
     public BlockEntity newBlockEntity(BlockPos pos, BlockState state) {
         return new SimplePumpTile(pos, state);
     }

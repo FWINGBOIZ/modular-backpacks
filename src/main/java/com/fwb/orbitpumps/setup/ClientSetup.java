@@ -1,6 +1,6 @@
-package com.example.orbitpumps.setup;
+package com.fwb.orbitpumps.setup;
 
-import com.example.orbitpumps.OrbitPumps;
+import com.fwb.orbitpumps.OrbitPumps;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;

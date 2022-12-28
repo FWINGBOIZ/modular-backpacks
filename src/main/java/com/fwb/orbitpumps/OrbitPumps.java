@@ -1,8 +1,8 @@
-package com.example.orbitpumps;
+package com.fwb.orbitpumps;
 
-import com.example.orbitpumps.setup.ClientSetup;
-import com.example.orbitpumps.setup.ModSetup;
-import com.example.orbitpumps.setup.Registration;
+import com.fwb.orbitpumps.setup.ClientSetup;
+import com.fwb.orbitpumps.setup.ModSetup;
+import com.fwb.orbitpumps.setup.Registration;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.DistExecutor;

@@ -1,5 +1,7 @@
-package com.example.orbitpumps.setup;
+package com.fwb.orbitpumps.setup;
 
+import com.fwb.orbitpumps.block.SimplePumpBlock;
+import com.fwb.orbitpumps.block.entity.SimplePumpTile;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -12,9 +14,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
-import static com.example.orbitpumps.OrbitPumps.MODID;
-import com.example.orbitpumps.block.SimplePumpBlock;
-import com.example.orbitpumps.block.entity.SimplePumpTile;
+import static com.fwb.orbitpumps.OrbitPumps.MODID;
 
 public class Registration {
     private static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, MODID);
@@ -39,7 +39,7 @@ public class Registration {
     public static final RegistryObject<Item> SIMPLE_PUMP_ITEM = fromBlock(SIMPLE_PUMP);
     public static final RegistryObject<BlockEntityType<SimplePumpTile>> SIMPLE_PUMP_BE = BLOCK_ENTITIES.register("simple_pump", () -> BlockEntityType.Builder.of(SimplePumpTile::new, SIMPLE_PUMP.get()).build(null));
 
-    // Conveniance function: Take a RegistryObject<Block> and make a corresponding RegistryObject<Item> from it
+    // Convenience function: Take a RegistryObject<Block> and make a corresponding RegistryObject<Item> from it
     public static <B extends Block> RegistryObject<Item> fromBlock(RegistryObject<B> block) {
         return ITEMS.register(block.getId().getPath(), () -> new BlockItem(block.get(), DEFAULT_ITEM_PROPERTIES));
     }

@@ -1,6 +1,6 @@
-package com.example.orbitpumps.block.entity;
+package com.fwb.orbitpumps.block.entity;
 
-import com.example.orbitpumps.setup.Registration;
+import com.fwb.orbitpumps.setup.Registration;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;

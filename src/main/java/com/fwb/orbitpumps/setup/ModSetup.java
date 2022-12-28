@@ -1,4 +1,4 @@
-package com.example.orbitpumps.setup;
+package com.fwb.orbitpumps.setup;
 
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
