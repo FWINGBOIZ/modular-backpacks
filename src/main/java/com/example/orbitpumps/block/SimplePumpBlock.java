@@ -1,5 +1,6 @@
-package com.example.orbitpumps.blocks;
+package com.example.orbitpumps.block;
 
+import com.example.orbitpumps.block.entity.SimplePumpTile;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
@@ -20,7 +21,7 @@ import net.minecraft.world.phys.BlockHitResult;
 import org.jetbrains.annotations.Nullable;
 
 public class SimplePumpBlock extends Block implements EntityBlock {
-
+    // Instantiates block with initial properties
     public SimplePumpBlock() {
         super(Properties.of(Material.METAL)
                 .sound(SoundType.METAL)
@@ -33,7 +34,7 @@ public class SimplePumpBlock extends Block implements EntityBlock {
     @Nullable
     @Override
     public BlockEntity newBlockEntity(BlockPos pos, BlockState state) {
-        return new SimplePumpBE(pos, state);
+        return new SimplePumpTile(pos, state);
     }
 
     @Nullable
@@ -41,7 +42,7 @@ public class SimplePumpBlock extends Block implements EntityBlock {
     public <T extends BlockEntity> BlockEntityTicker<T> getTicker(Level level, BlockState state, BlockEntityType<T> type) {
         if (!level.isClientSide()) {
             return (lvl, pos, stt, te) -> {
-                if (te instanceof SimplePumpBE simplePump) simplePump.tickServer();
+                if (te instanceof SimplePumpTile simplePump) simplePump.tickServer();
             };
         }
         return null;

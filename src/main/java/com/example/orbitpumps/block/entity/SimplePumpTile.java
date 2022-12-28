@@ -1,4 +1,4 @@
-package com.example.orbitpumps.blocks;
+package com.example.orbitpumps.block.entity;
 
 import com.example.orbitpumps.setup.Registration;
 import net.minecraft.core.BlockPos;
@@ -6,8 +6,8 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 
 
-public class SimplePumpBE extends BlockEntity {
-    public SimplePumpBE(BlockPos pos, BlockState state) {
+public class SimplePumpTile extends BlockEntity {
+    public SimplePumpTile(BlockPos pos, BlockState state) {
         super(Registration.SIMPLE_PUMP_BE.get(), pos, state);
     }
 
